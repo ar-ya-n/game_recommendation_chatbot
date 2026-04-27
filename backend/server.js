@@ -41,7 +41,7 @@ app.get("/health", (req, res) => {
   res.json({
     status: "ok",
     service: "GameGuide AI Backend",
-    gemini: geminiService.initGemini ? "check logs" : "not loaded",
+    ai: aiService.initAI ? "ready" : "not loaded",
     timestamp: new Date().toISOString(),
   });
 });
