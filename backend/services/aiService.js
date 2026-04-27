@@ -74,7 +74,7 @@ async function generateResponse(userMessage, conversationHistory = [], userProfi
       model: MODEL,
       temperature: 0.6,
       top_p: 0.8,
-      max_tokens: 250,
+      max_tokens: 1000,
     });
 
     return response.choices[0]?.message?.content || "I couldn't generate a response. Please try again.";
